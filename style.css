@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;1,200&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+.i {
+	font-size: 0.3rem;
+}
+.navbar-links {
+    margin: auto;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5 rem;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.navbar-item {
+    font-size: 1rem;
+    padding-left: 2rem;
+}
+
+.link a {
+    position: relative;
+    padding-bottom: 0;
+    color: #fff
+}
+
+.link a::after {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    color: #1d4ed8;
+    transition: all 0.3s ease;
+}
+
+.link a:hover:after {
+    width: 70%;
+    color: white;
+}
+
+.btn {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #6b6b7e;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1e40af;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.88rem;
+    user-select: none;
+    overflow-x: hidden;
+    color: var(--color-dark);
+    background-color: var(--color-background);
+}
+
+a {
+    color: var(--color-dark);
+}
+
+p {
+    color: var(--color-dark-variant);
+}
+
+b {
+    color: var(--color-dark);
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 40px;
+    height: 100%;
+
+    background-color: #222228;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    min-height: 480;
+}
+
+.container p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px;
+
+}
+
+.container span {
+    font-size: 12px;
+}
+
+.container button {
+    background-color: #6b6b7e;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.container button:hover{
+    background-color: #1e40af;
+}
+.container input {
+    background-color: #fff;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 5 rem;
+}
+
+.content{
+    justify-content: center;
+    background-color: var(--color-light);
+    border: white;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1rem;
+    border-radius: 1rem;
+    align-content: center;
+    background-color: #2c2f36;
+    gap: 2rem;
+}
+.task-steps-input input{
+    padding: 1rem;
+}
+.task-steps-input button{
+    padding: 1rem;
+}
+ h3 {
+    font-size: 1rem;
+    padding-left: 0.5rem;
+}
+.user-list{
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-light);
+    border: white;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+    border-radius: 1rem;
+    align-content: center;
+    background-color: #2c2f36;
+    gap: 2rem;
+}
+li {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5 rem;
+    color: #fff;
+}
+
+.add-user{
+    display: none;
+}
+.error-text{
+    color: red;
+}
