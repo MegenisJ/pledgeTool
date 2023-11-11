@@ -136,17 +136,13 @@ function generateData(){
 
 		peopleQuantities.set(a[0], parseInt(a[1]));
 	}
-	//const rows = [
-	//	["name", "pledges", ],
-	//	["name2", "city2", ]
-	//]
 	let rows = new Array();
 	rows.push(["name", "pledges"]);
 	for (const [key, value] of peopleQuantities.entries()) {
 		rows.push([key, value])
 	}
 	
-	let csvContent = "" //"data:text/csv;charset=utf-8,"; 
+	let csvContent = ""
 	rows.forEach(function(rowArray) {
 		let row = rowArray.join(",");
 		csvContent += row + "\r\n";
